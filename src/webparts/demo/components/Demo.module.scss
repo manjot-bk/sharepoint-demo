@@ -32,3 +32,53 @@
     }
   }
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.listViewer {
+  padding: 20px;
+}
+
+.detailsList {
+  margin-top: 10px;
+  
+  .ms-DetailsHeader {
+    background-color: #f3f2f1;
+  }
+  
+  .ms-DetailsRow {
+    &:hover {
+      background-color: #f3f2f1;
+    }
+  }
+}
+
+.itemViewer {
+  padding: 20px;
+}
+
+.userProfile {
+  padding: 20px;
+  border: 1px solid #e1dfdd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.siteInfo {
+  padding: 20px;
+  background-color: #f3f2f1;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.createForm {
+  padding: 20px;
+  border: 1px solid #e1dfdd;
+  border-radius: 4px;
+  margin-top: 20px;
+}

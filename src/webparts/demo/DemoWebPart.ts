@@ -14,6 +14,7 @@ import { IDemoProps } from './components/IDemoProps';
 
 export interface IDemoWebPartProps {
   description: string;
+  title: string;
 }
 
 export default class DemoWebPart extends BaseClientSideWebPart<IDemoWebPartProps> {
@@ -29,7 +30,8 @@ export default class DemoWebPart extends BaseClientSideWebPart<IDemoWebPartProps
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        context: this.context
       }
     );
 
@@ -108,8 +110,13 @@ export default class DemoWebPart extends BaseClientSideWebPart<IDemoWebPartProps
             {
               groupName: strings.BasicGroupName,
               groupFields: [
+                PropertyPaneTextField('title', {
+                  label: 'Web Part Title',
+                  value: this.properties.title
+                }),
                 PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                  label: strings.DescriptionFieldLabel,
+                  value: this.properties.description
                 })
               ]
             }
