@@ -1,84 +1,88 @@
 @import '~@fluentui/react/dist/sass/References.scss';
 
 .demo {
-  overflow: hidden;
-  padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
-  }
+	overflow: hidden;
+	padding: 1em;
+	color: '[theme:bodyText, default: #323130]';
+	color: var(--bodyText);
+	&.teams {
+		font-family: $ms-font-family-fallbacks;
+	}
 }
 
 .welcome {
-  text-align: center;
+	text-align: center;
 }
 
 .welcomeImage {
-  width: 100%;
-  max-width: 420px;
+	width: 100%;
+	max-width: 420px;
 }
 
 .links {
-  a {
-    text-decoration: none;
-    color: "[theme:link, default:#03787c]";
-    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+	a {
+		text-decoration: none;
+		color: '[theme:link, default:#03787c]';
+		color: var(
+			--link
+		); // note: CSS Custom Properties support is limited to modern browsers only
 
-    &:hover {
-      text-decoration: underline;
-      color: "[theme:linkHovered, default: #014446]";
-      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
-    }
-  }
+		&:hover {
+			text-decoration: underline;
+			color: '[theme:linkHovered, default: #014446]';
+			color: var(
+				--linkHovered
+			); // note: CSS Custom Properties support is limited to modern browsers only
+		}
+	}
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
 }
 
 .listViewer {
-  padding: 20px;
+	padding: 20px;
 }
 
 .detailsList {
-  margin-top: 10px;
-  
-  .ms-DetailsHeader {
-    background-color: #f3f2f1;
-  }
-  
-  .ms-DetailsRow {
-    &:hover {
-      background-color: #f3f2f1;
-    }
-  }
+	margin-top: 10px;
+
+	.ms-DetailsHeader {
+		background-color: #f3f2f1;
+	}
+
+	.ms-DetailsRow {
+		&:hover {
+			background-color: #f3f2f1;
+		}
+	}
 }
 
 .itemViewer {
-  padding: 20px;
+	padding: 20px;
 }
 
 .userProfile {
-  padding: 20px;
-  border: 1px solid #e1dfdd;
-  border-radius: 4px;
-  margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #e1dfdd;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }
 
 .siteInfo {
-  padding: 20px;
-  background-color: #f3f2f1;
-  border-radius: 4px;
-  margin-bottom: 20px;
+	padding: 20px;
+	background-color: #f3f2f1;
+	border-radius: 4px;
+	margin-bottom: 20px;
 }
 
 .createForm {
-  padding: 20px;
-  border: 1px solid #e1dfdd;
-  border-radius: 4px;
-  margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #e1dfdd;
+	border-radius: 4px;
+	margin-top: 20px;
 }
