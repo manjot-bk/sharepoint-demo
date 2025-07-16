@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sharepoint-demo-client-side-solution",
+    "id": "36f4ff13-a0ee-4bce-b2ee-713b670464d3",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sharepoint-demo description"
+      },
+      "longDescription": {
+        "default": "sharepoint-demo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sharepoint-demo Feature",
+        "description": "The feature that activates elements of the sharepoint-demo solution.",
+        "id": "02ad9316-2830-4b46-8d99-411591bdbbf6",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sharepoint-demo.sppkg"
+  }
+}
